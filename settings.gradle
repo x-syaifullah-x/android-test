@@ -1,0 +1,6 @@
+include ':test_navigation'
+rootProject.name = "Test Module"
+include (
+        ":app",
+        ":test"
+)
