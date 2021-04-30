@@ -1,16 +1,13 @@
 # Test Module
 
-###### testImplementation "com.github.x-syaifullah-x.android-test:test:0.0.1"
-###### androidTestImplementation "com.github.x-syaifullah-x.android-test:test:0.0.1"
-###### testImplementation com.github.x-syaifullah-x.android-test:test_navigation:0.0.1
-###### androidTestImplementation com.github.x-syaifullah-x.android-test:test_navigation:0.0.1
+###### testImplementation "com.github.x-syaifullah-x.android-test:test:$vAndroidModulTest"
+###### androidTestImplementation "com.github.x-syaifullah-x.android-test:test:$vAndroidModulTest"
+###### testImplementation "com.github.x-syaifullah-x.android-test:test_navigation:$vAndroidModulTest"
+###### androidTestImplementation("com.github.x-syaifullah-x.android-module-test:test_navigation:$vAndroidModulTest") {
+           androidTestImplementation "androidx.fragment:fragment-ktx:$versions"
+       }
 
-    if error message Cannot access 'androidx.lifecycle.HasDefaultViewModelProviderFactory' which is a supertype of 'Activity'.
-    Check your module classpath for missing or conflicting dependencies
-        please implementation "androidx.fragment:fragment-ktx:1.3.0"
-
-
-        run test error More than one file was found with OS independent path '.....'
+       run test error More than one file was found with OS independent path '.....'
                 packagingOptions {
                     exclude "**/attach_hotspot_windows.dll"
                     exclude "META-INF/licenses/ASM"
