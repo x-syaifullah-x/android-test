@@ -4,8 +4,8 @@
 ###### androidTestImplementation "com.github.x-syaifullah-x.android-test:test:$vAndroidModulTest"
 ###### testImplementation "com.github.x-syaifullah-x.android-test:test_navigation:$vAndroidModulTest"
 ###### androidTestImplementation("com.github.x-syaifullah-x.android-module-test:test_navigation:$vAndroidModulTest") {
-           androidTestImplementation "androidx.fragment:fragment-ktx:$versions"
-       }
+######           androidTestImplementation "androidx.fragment:fragment-ktx:$versions"
+######       }
 
        run test error More than one file was found with OS independent path '.....'
                 packagingOptions {
